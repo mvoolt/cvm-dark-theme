@@ -1,10 +1,10 @@
 /* ==UserStyle==
 @name         CollabVM Dark
 @namespace    cvm-dark
-@version      1.0.2
+@version      1.0.3
 @license      GPL-3.0
 ==/UserStyle== */
-@-moz-document url-prefix("https://computernewb.com/collab-vm/") {
+@-moz-document regexp("^https?://computernewb\\.com/collab-vm/.*") {
     .ui.menu {
         background-color: #121212 !important;
     }
@@ -47,6 +47,14 @@
         background-color: darkred !important;
     }
 
+    #online-users > .item.has-turn {
+        background-color: #82b3c9;
+    }
+
+    #online-users > .item.waiting-turn {
+        background-color: #cbc26d;
+    }
+    
     .ui.button, #chat-user, #username-label, .ui.basic.labels .label, .ui.basic.label {
         background-color: #4d4d4d !important;
     }
@@ -56,9 +64,13 @@
         border: none !important;
     }
 
-    .message-pane-wrapper, .message-pane li:hover {
+    .message-pane-wrapper {
         background-color: #2b2b2b;
-        border: 1px solid #1c1c1c
+        border: none;
+    }
+    
+    .message-pane li:hover {
+        background-color: #4d4d4d;
     }
 
     .ui.cards > .card, .ui.cards > .card:hover {
@@ -70,7 +82,7 @@
         background-color: #2b2b2b !important;
     }
 
-    .message-pane li {
+    .message-pane > li {
         border-bottom: 1px solid #363636;
         box-shadow: 0 1px 0 0 #333333;
     }

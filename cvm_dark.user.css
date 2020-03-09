@@ -1,10 +1,10 @@
 /* ==UserStyle==
 @name         CollabVM Dark
 @namespace    cvm-dark
-@version      1.0.0
+@version      1.0.1
 ==/UserStyle== */
 
-@-moz-document url-prefix("computernewb.com/collab-vm") {
+@-moz-document url-prefix("https://computernewb.com/collab-vm/") {
 .ui.menu {
     background-color:#121212 !important;
 }

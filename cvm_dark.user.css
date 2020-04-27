@@ -4,7 +4,7 @@
 @version      1.0.4
 @license      GPL-3.0
 ==/UserStyle== */
-@-moz-document regexp("^https?://([a-z0-9]+[.])*(computernewb\\.com|socket\\.computer|flyonthewall.buzz)/(collab-vm|truth)/.*") {
+@-moz-document regexp("^https?://([a-z0-9]+[.])*(computernewb\\.com|socket\\.computer|flyonthewall\\.buzz)/(collab-vm|truth)/.*") {
     .ui.menu {
         background-color: #121212 !important;
     }

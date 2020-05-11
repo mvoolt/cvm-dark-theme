@@ -1,12 +1,20 @@
 /* ==UserStyle==
 @name         CollabVM Dark
 @namespace    cvm-dark
-@version      1.0.4
+@version      1.0.5
 @license      GPL-3.0
 ==/UserStyle== */
 @-moz-document regexp("^https?://([a-z0-9]+[.])*(computernewb\\.com|socket\\.computer|flyonthewall\\.buzz)/(collab-vm|truth)/.*") {
-    .ui.menu {
+    .container > h1:nth-child(1), p {
+        color: #6d6d6d;
+    }
+    
+    .ui.menu, .navbar {
         background-color: #121212 !important;
+    }
+    
+    .navbar {
+        border: none;
     }
     
     .item, label {

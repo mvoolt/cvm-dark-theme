@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         CollabVM Dark
 @namespace    cvm-dark
-@version      1.0.5
+@version      1.0.6
 @license      GPL-3.0
 ==/UserStyle== */
 @-moz-document regexp("^https?://([a-z0-9]+[.])*(computernewb\\.com|socket\\.computer|flyonthewall\\.buzz)/(collab-vm|truth)/.*") {
@@ -9,8 +9,9 @@
         color: #6d6d6d;
     }
     
-    .ui.menu, .navbar {
+    .ui.menu, .navbar, .navbar-default {
         background-color: #121212 !important;
+        background-image: none !important;
     }
     
     .navbar {
@@ -21,20 +22,30 @@
         color: #a4a4a4 !important;
     }
 
-    input#search-box, .ui.dropdown .menu, h4, .ui.segment {
+    input#search-box, .ui.dropdown .menu, h4.ui, .ui.segment {
         background-color: #2e2e2e !important;
     }
+    
+    .list-group-item.disabled, .panel, .list-group-item {
+        background-color: #2e2e2e !important;
+        color: gray;
+        border:none !important;
+        box-shadow:none !important;
+    }
 
-    #change-username-modal, .ui.modal > .header, .ui.modal > .content {
+    #change-username-modal, .ui.modal > .header, .ui.modal > .content, .modal-content, .modal-header, .modal-footer {
         color: gray;
         background-color: #2e2e2e !important;
+        border: none !important;
     }
     .ui.form input, .ui.form textarea, .ui.form select, #guac-table > div, .tabulator-row.tabulator-selectable:hover, .tabulator-col-content, .tabulator-row {
         background-color: #121212 !important;
         color: lightgray !important;
     }
-    #vm-list > div > div > div:hover {
+    #vm-list > div > div > div:hover, .thumbnail, div.caption {
         background-color: #2e2e2e !important;
+        border: none !important;
+        color: gray !important;
     }
     .tabulator-row.tabulator-selectable.tabulator-row-odd.tabulator-selected {
         background-color: #363636 !important;
@@ -47,34 +58,58 @@
         color: gray;
     }
 
-    .ui.green.button, .ui.green.horizontal.label {
+    .ui.green.button, .ui.green.horizontal.label, button#vote-yes, .label-success {
         background-color: darkgreen !important;
+        background-image: none;
+        border: none;
     }
 
-    .ui.red.button, .ui.red.horizontal.label {
+    .ui.red.button, .ui.red.horizontal.label, button#vote-no, .label-danger {
         background-color: darkred !important;
+        background-image: none;
+        border: none;
     }
 
-    #online-users > .item.has-turn {
-        background-color: #82b3c9;
+    #online-users > .item.has-turn, .has-turn {
+        background-color: #82b3c9 !important;
     }
 
-    #online-users > .item.waiting-turn {
-        background-color: #cbc26d;
+    #online-users > .item.waiting-turn, .waiting-turn {
+        background-color: #cbc26d !important;
     }
     
-    .ui.button, #chat-user, #username-label, .ui.basic.labels .label, .ui.basic.label {
+    .ui.button, #chat-user, #username-label, .ui.basic.labels .label, .ui.basic.label, #username-addon {
         background-color: #4d4d4d !important;
+        border: none;
+        color: gray;
     }
-
+    
+    button
+    {
+        background-color: #4d4d4d !important;
+        border: none !important;
+        color: gray !important;
+        background-image: none !important;
+        text-shadow: none !important;
+    }
+    
+    h4 {
+        background: none !important;
+    }
+    
+    .page-header, .text-center {
+        border: none !important;
+        padding-bottom: 0 !important
+    }
+    
     .ui.attached.segment, .ui.top.attached.header {
         color: #a4a4a4;
         border: none !important;
     }
 
-    .message-pane-wrapper {
-        background-color: #2b2b2b;
-        border: none;
+    .message-pane-wrapper, #username-box {
+        background-color: #2b2b2b !important;
+        border: none !important;
     }
     
     .message-pane li:hover {
@@ -86,8 +121,13 @@
         box-shadow: none !important;
     }
 
-    .ui.input > input, .ui.input > input:focus, .ui.input > input:active, div#field {
+    .ui.input > input, .ui.input > input:focus, .ui.input > input:active, div#field, #chat-input {
         background-color: #2b2b2b !important;
+        border: none;
+    }
+    
+    #chat-input:focus, #username-box:focus {
+        box-shadow: none;
     }
 
     .message-pane > li {
@@ -106,9 +146,14 @@
     #vote-status > h3 > small {
         color: lightgray;
     }
-
-    div#vote-alert {
-        background-color: #121212;
+    
+    div#vote-alert, #vote-dismiss {
+        background-color: #121212 !important;
+        background-image: none;
+        border: none;
+        box-shadow: none;
+        color: lightgray;
+        text-shadow: none;
     }
 
     .ui.blue.message, .ui.attached.blue.message {

@@ -1,5 +1,5 @@
 # cvm-dark-theme
-Dark theme for CollabVM 2
+Dark theme for CollabVM 1 and 2
 
 Requires [Stylus](https://add0n.com/stylus.html)
 

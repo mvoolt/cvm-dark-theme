@@ -5,7 +5,7 @@ Requires [Stylus](https://add0n.com/stylus.html)
 
 ## How to install
 * Install stylus from the link above
-* Click [here](https://github.com/MDMCK10/cvm-dark-theme/raw/master/cvm_dark.user.css)
+* Click [here](https://github.com/MDMCK10/cvm-dark-theme/raw/master/cvm_dark.user.css) (or [here](https://github.com/MDMCK10/cvm-dark-theme/raw/master/cvm_black.user.css) for the black theme)
 * Make sure "Check for updates" is checked
 * Click "Install style"
 * Enjoy

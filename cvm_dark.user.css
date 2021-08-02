@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         CollabVM Dark
-@namespace    cvm-dark
-@version      1.0.7
+@namespace    mv-cvm-dark
+@version      1.0.1.1
 @license      GPL-3.0
 ==/UserStyle== */
 @-moz-document regexp("^https?://([a-z0-9]+[.])*(computernewb\\.com|socket\\.computer|flyonthewall\\.buzz)/(collab-vm|truth)/.*") {

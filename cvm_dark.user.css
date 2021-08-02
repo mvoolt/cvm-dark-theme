@@ -5,6 +5,19 @@
 @license      GPL-3.0
 ==/UserStyle== */
 @-moz-document regexp("^https?://([a-z0-9]+[.])*(computernewb\\.com|socket\\.computer|flyonthewall\\.buzz)/(collab-vm|truth)/.*") {
+    /* it's messy but it works so */
+    #display-outer,.navbar,.container-fluid, #vm-view,.panel, .col-md-8 > div {
+        margin-top: 0 !important; margin-bottom:0 !important; padding-bottom: 0}
+    .col-md-4, .col-md-8 {padding-right: 0px; padding-left: 0; overflow: hidden;}
+    div#display-outer {line-height: 0}
+    .page-header, div#vm-view > br, div#kbd-outer > br {display: none;}
+    #display-outer > h3 {display:contents;}
+    #online-users {max-height: 241px !important;}
+    .btn-default { margin-right: -4px; }
+    #vote-stats > h3 {margin-top: 0; margin-bottom: 0;}  
+    .h4, .h5, .h6, h4, h5, h6 {margin-top: 1px;margin-bottom: 6px;}  
+    * {border-radius: unset !important;}
+	
     .container > h1:nth-child(1), p {
         color: #6d6d6d;
     }

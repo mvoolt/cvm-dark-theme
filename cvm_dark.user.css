@@ -1,23 +1,45 @@
 /* ==UserStyle==
 @name         CollabVM Dark
 @namespace    mv-cvm-dark
-@version      1.0.1.1
+@version      1.0.1.2
 @license      GPL-3.0
 ==/UserStyle== */
 @-moz-document regexp("^https?://([a-z0-9]+[.])*(computernewb\\.com|socket\\.computer|flyonthewall\\.buzz)/(collab-vm|truth)/.*") {
     /* it's messy but it works so */
-    :root {color-scheme: dark;}
     #display-outer,.navbar,.container-fluid, #vm-view,.panel, .col-md-8 > div {
-    margin-top: 0 !important; margin-bottom:0 !important; padding-bottom: 0}
-    .col-md-4, .col-md-8 {padding-right: 0px; padding-left: 0; overflow: hidden;}
-    div#display-outer {line-height: 0}
-    .page-header, div#vm-view > br, div#kbd-outer > br {display: none;}
-    #display-outer > h3 {display:contents;}
-    #online-users {max-height: 241px !important;}
-    .btn-default { margin-right: -4px; }
-    #vote-stats > h3 {margin-top: 0; margin-bottom: 0;}  
-    .h4, .h5, .h6, h4, h5, h6 {margin-top: 1px;margin-bottom: 6px;}  
+        margin-top: 0 !important; margin-bottom:0 !important; padding-bottom: 0;}
+    .col-md-3 {margin-top: 10px;}
+    .col-md-4, .col-md-8 {padding-right: 0px !important; padding-left: 0 !important; overflow: hidden !important;}
+    div#display-outer {line-height: 0 !important;}
+    .page-header, div#vm-view > br, div#kbd-outer > br, #dw-ad {display: none !important;}
+    #display-outer > h3 {display:contents !important;}
+    #online-users {max-height: 241px !important; height: 241px !important;}
+    .btn-default { margin-right: -4px !important; }
+    .alert { margin-bottom: 0px !important; }
+    #vote-stats > h3 {margin-top: 0 !important; margin-bottom: 0 !important;}  
+    .h4, .h5, .h6, h4, h5, h6 {margin-top: 1px !important;margin-bottom: 6px !important;}  
     * {border-radius: unset !important;}
+    .thumbnail .caption { padding: 9px 9px 0px 9px; }
+    .btn,.panel,.list-group,.list-group-item,#chat-user,#chat-input,.guac-keyboard-key,.modal-content,#username-addon,#username-box,nav,.dropdown-menu{
+	border-radius:0!important;
+	box-shadow:none!important;
+	background-image:none!important;
+	outline:none!important;
+	transition:none!important;
+}    
+    nav {
+        width:100%;
+        min-height:auto!important;
+        height:auto!important;
+        padding-top: 7px; padding-bottom: 7px !important; margin-bottom: 7px !important;
+    }
+    .navbar-nav a{
+        padding:0 10px!important;
+        margin:0!important;
+        height:auto!important;
+    }
+    .navbar-brand {padding-left: 0 !important;padding-right: 0 !important; padding-bottom: 0; padding-top: 0; margin:0!important; height:auto!important;}
+    .navbar-right {margin-bottom:0;margin-top:0;}
 	
     .container > h1:nth-child(1), p {
         color: #6d6d6d;

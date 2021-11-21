@@ -16,5 +16,5 @@ Requires [Stylus](https://add0n.com/stylus.html)
 <details>
 <summary>Dark version</summary>
 <br>
-<img src="https://user-images.githubusercontent.com/77506726/127814914-9a27b49b-d043-4d6e-b201-a5baf0e4dfc9.png">
+<img src="https://user-images.githubusercontent.com/77506726/142764270-9154f6c0-cfed-4622-901b-c49394f2948c.png">
 </details>

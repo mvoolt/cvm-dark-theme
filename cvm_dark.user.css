@@ -1,11 +1,17 @@
 /* ==UserStyle==
 @name         CollabVM Dark
 @namespace    mv-cvm-dark
-@version      1.0.2
+@version      1.0.3
 @license      GPL-3.0
 ==/UserStyle== */
 @-moz-document regexp("^https?://([a-z0-9]+[.])*(computernewb\\.com|socket\\.computer|flyonthewall\\.buzz)/(collab-vm|truth)/.*") {
-.modal-body{
+@media only screen and (max-width: 867px) {
+    nav, .col-md-4 > .panel > .list-group > .list-group-item.disabled {display: none;} 
+    #online-users {height: auto !important; display: flex; flex-wrap: wrap; overflow: hidden !important;}
+    #online-users > .list-group-item {overflow: hidden; width: 20%;}
+}
+    
+    .modal-body{
     padding-top:3px;
     padding-left:8px;
     padding-right:6px;
@@ -67,7 +73,7 @@ display:none!important;
     div#display-outer {margin:auto; width: auto; line-height: 0 !important;}
     .page-header, div#vm-view > br, div#kbd-outer > br, #dw-ad {display: none !important;}
     #display-outer > h3 {display:contents !important;}
-    #online-users {max-height: 251px !important; height: 251px !important;}
+    #online-users {max-height: 251px !important; height: 251px;}
     .btn-default { margin-right: -4px !important; }
     .alert { margin-bottom: 0px !important; }
     #vote-stats > h3 {
